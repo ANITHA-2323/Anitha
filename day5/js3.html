@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button onclick="anitha()">Click Me</button>
+	<p id="mango">Do u have boy friend or not?</p>
+</body>
+<script >
+	function anitha()
+	{
+		var a;//decleration
+		if(confirm('Tell me ur answer'))
+		{
+			a="Yes Am waiting for boy firend";
+		}
+		else
+		{
+			a="No dear, im single";
+		}
+		document.getElementById('mango').innerHTML=a;
+	}
+</script>
+</html>

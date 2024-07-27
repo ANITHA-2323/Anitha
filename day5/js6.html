@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	
+	<button onclick="anitha()">Show me</button>
+	<p id="testmatch"></p>
+<script>
+	function anitha()
+	{
+		var i,j;
+		for (i=97;i<=122;i++)
+		{
+			for(j=97;j<=i;j++)
+			{
+				document.getElementById('testmatch').innerHTML+=String.fromCharCode(j)+" ";
+			}
+		document.getElementById('testmatch').innerHTML+="<br/>";
+		
+		}
+		
+	}
+	/*for i=97;
+	document.write(i=)*/
+</script>
+</html>

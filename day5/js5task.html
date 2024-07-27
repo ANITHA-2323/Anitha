@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+</head>
+<body>
+	enter x:<input type="number" id ="x" value="">
+	enter y:<input type="number" id="y" value="">
+	out:<input type="number" id="output" value=""onclick="anitha()">
+	<button onclick="anitha()">Check result</button>
+</body>
+<script>
+	function anitha() 
+	{
+		var x=document.getElementById('x').value;
+		var y=document.getElementById('y').value;
+		var z=(x*y);
+		document.getElementById('output').value=z;
+	}
+</script>
+</html>
