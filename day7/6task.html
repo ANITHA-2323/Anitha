@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+</head>
+<body>
+	enter a:<input type="number" id ="a" value="">
+	<button onclick="anitha()">check</button>
+	<p id="task"></p>
+</body>
+<script>
+	function anitha()
+	 {
+		var x=document.getElementById('a').value;
+		switch(true)
+		{
+			case x>21:document.getElementById('task').innerHTML=("extra"+(x-21));break;	
+									
+			case x<21:document.getElementById('task').innerHTML=("less"+(21-x));break;	
+						
+			case x==21:  document.getElementById('task').innerHTML="enough";break;	
+						
+			default: document.getElementById('task').innerHTML="enter valid data";break;	
+					
+		}
+	}
+</script>
+</html>
