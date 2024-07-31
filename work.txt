@@ -1,0 +1,71 @@
+db.orders.find({
+  $expr: { $gt: ["$total", 100] }
+});
+
+db.orders.aggregate([
+  {
+    $lookup: {
+      from: "customers",
+      localField: "customerId",
+      foreignField: "_id",
+      as: "customerDetails"
+    }
+  }
+]);
+
+
+db.orders.aggregate([
+  {
+    $project: {
+      orderId: 1,
+      total: 1,
+      date: { $dateToString: { format: "%Y-%m-%d", date: "$date" } }
+    }
+  }
+]);
+
+
+db.orders.aggregate([
+  { $group: { _id: "$customerId", totalAmount: { $sum: "$total" } } },
+  { $merge: { into: "customerTotals", whenMatched: "merge", whenNotMatched: "insert" } }
+]);
+
+
+db.orders.aggregate([
+  { $sort: { total: -1 } },
+  { $limit: 5 }
+]);
+
+
+db.orders.aggregate([
+  {
+    $search: {
+      index: "default",
+      text: {
+        query: "coffee",
+        path: "item"
+      }
+    }
+  }
+]);
+
+
+db.orders.aggregate([
+  { $sort: { date: -1 } }
+]);
+
+
+db.orders.aggregate([
+  { $sortByCount: "$item" }
+]);
+
+
+db.orders.aggregate([
+  { $sort: { date: -1 } },
+  { $skip: 10 }
+]);
+
+
+db.orders.aggregate([
+  { $group: { _id: "$customerId", totalSpent: { $sum: "$total" } } }
+]);
