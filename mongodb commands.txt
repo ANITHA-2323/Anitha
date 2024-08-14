@@ -1,0 +1,59 @@
+
+1.$sort 
+db.student.find().sort({ salary: 1 })
+
+2.$lookup
+db.student.aggregate([
+    {
+        $lookup: {
+            from: "CIET",
+            localField: "clg_id",
+            foreignField: "_id",
+            as: "collegeDetails"
+        }
+    }
+]);
+
+
+3.$merge
+db.department.aggregate([
+   { $match: { amount: { $gt: 1000 } } },
+   { $merge: "salary" }
+]);
+
+4.$group
+db.customer.aggregate([
+    { $group: { _id: null, avgsal: { $avg: "$salary" } } }
+]);
+
+5.$set
+db.student.updateOne({age: {$lt: 25}}, {$set: {address: 'IND'}})
+
+6.$project
+db.department.aggregate([
+    { $project: { firstName: 1, lastName: 1, salary: 1, _id: 0 } }
+]);
+
+7.$out
+db.students.aggregate([
+   { $match: { age: { $gte: 20 } } },
+   { $out: "oldStudents" }
+]);
+
+
+8.$limit
+db.department.aggregate([
+    { $limit: 5 }
+]);
+
+9.$match 
+db.student.aggregate([
+    { $match: { courses: { $in: ["Python", "Java"] } } },
+    { $group: { _id: "$courses", count: { $sum: 1 } } }
+]);
+
+10.$count
+db.student.aggregate([
+   { $match: { address: "INDIA" } },    
+   { $count: "total_student" }  
+]);

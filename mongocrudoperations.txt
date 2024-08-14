@@ -1,0 +1,76 @@
+
+1.Insert one row Command-
+
+db.student.insertOne({
+    name: "xyz",
+    age: 19,
+    email: "xyz@gmail.com",
+    phone: 9876549059 
+});
+
+2.Insert Multiple rows -
+
+db.student.insertMany([
+    {_id: 2, name: "sms", age: 25, email: "pqrst@gmail.com",  phone: 9875676789 },
+    {_id: 3, name: "cde", age: 34, email: "lmop@gmail.com",  phone: 9845667678 }
+]);
+
+3. Retrieve the data - 
+
+db.student.find(); 
+
+Retrieve the data line by line -
+
+db.student.find().pretty();
+
+
+4.Retrieve data with a Condition-
+
+ db.student.find({name: {$ne: sms}});
+
+5.Update a Single row - 
+
+db.student.updateOne(
+    {age: 34},
+    {$set: {"name": "abcd"}}
+);
+
+6.Update Multiple row -
+
+db.customer.updateMany(
+    {name: "xyz"},
+    {$set: {age: 45, email: "ghyrt@gmail.com"}}
+);
+
+7.Delete a Single row -
+
+ db.student.deleteOne({name: "sys"});
+
+8. Delete Multiple row - 
+
+db.student.deleteMany({email: "dgfyj@gmail.com"});
+
+9. Users and Roles  
+
+db.createUser({
+    user: "perfectadmin",
+    pwd: "123456",
+    roles: [{ role: "userAdminAnyDatabase", db: "admin" }]
+});
+
+db.getUsers()
+
+db.createRole({ role: "userAdminAnyDatabase", privileges: [ { resource: { db: "ciet", collection: "" }, actions: [ "find", "update", "insert", "remove" ] } ], roles: [] });
+
+db.getRoles()
+
+
+10.db.student.aggregate([
+    {$lookup: {
+        _id: null,
+        minsal: {$min: "10000"},
+        maxsal: {$max: "50000"},
+        avgsal: {$avg: "25000"},
+        totalsal: {$sum: "60000"}
+    }}
+]);

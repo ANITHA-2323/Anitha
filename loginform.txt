@@ -1,0 +1,141 @@
+
+<html>
+<head>
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="forms.css">
+</head>
+<style>
+    body 
+    {
+        background-color: lavender;
+        font-family: robot;
+    }
+    .container 
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .login, .reg 
+    {
+        background-color: powderblue;
+        padding: 20px;
+        margin: 30px;
+    }
+    form 
+    {
+        width: 300px;
+        height: auto;    
+        padding: 40px;
+        background-color: skyblue;
+    }
+    form h1 
+    {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+    form label 
+    {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    form input, form select 
+    {
+        width: 100%;
+        height: 30px;
+        margin-top: 5px;           
+        margin-bottom: 20px;
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    input[type="button"] 
+    {
+        width: 100%;
+        height: 35px;
+        background-color: blue;
+        border: none;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    input[type="radio"] 
+    {
+        width: auto;
+    }
+    .radio-button 
+    {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    input[type="checkbox"] 
+    {
+        width: auto;
+    }
+    .check-box 
+    {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+ </style>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <form class="login-form">
+                <h1>LOGIN</h1>
+                <label for="login-email">Email</label>
+                <input type="email" name="login-email" id="login-email" required>
+                
+                <label for="login-password">Password</label>
+                <input type="password" name="login-password" id="login-password" required>
+
+                <label for="login-captcha">Captcha</label>
+                <input type="text" name="login-captcha" id="login-captcha" required>
+                
+                <input type="button" name="sb" id="sb" value="LOGIN">
+            </form>
+        </div>
+        <div class="reg">
+            <form class="reg-form">
+                <h1>REGISTER</h1>
+                <label for="reg-name">Name</label>
+                <input type="text" name="reg-name" id="reg-name" required>
+
+                <label for="reg-password">Password</label>
+                <input type="password" name="reg-password" id="reg-password" required>
+
+                <label for="reg-confirm-password">Confirm Password</label>
+                <input type="password" name="reg-confirm-password" id="reg-confirm-password" required>
+
+                <label for="reg-country">Choose Country</label>
+                <select name="reg-country" id="reg-country" required>
+                    <option value="">Choose Country</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select>
+                <label>Do you have a passport?</label>
+                <div class="radio-button">
+                    <input type="radio" name="passport" id="yes" value="yes">YES
+                    <input type="radio" name="passport" id="no" value="no">NO
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="declaration" id="declaration"> The give information is correct.
+                </div>
+                <input type="button" name="sb" id="sb" value="REGISTER">
+            </form>
+        </div>
+    </div>
+<p style="text-align:center"> &copy; by MOUNIKA</p>
+</body>
+</html>
