@@ -2,7 +2,7 @@
 1.Insert one row Command-
 
 db.student.insertOne({
-    name: "xyz",
+    name: "ANI",
     age: 19,
     email: "xyz@gmail.com",
     phone: 9876549059 
@@ -11,8 +11,8 @@ db.student.insertOne({
 2.Insert Multiple rows -
 
 db.student.insertMany([
-    {_id: 2, name: "sms", age: 25, email: "pqrst@gmail.com",  phone: 9875676789 },
-    {_id: 3, name: "cde", age: 34, email: "lmop@gmail.com",  phone: 9845667678 }
+    {_id: 2, name: "teja", age: 25, email: "pqrst@gmail.com",  phone: 9090909090 },
+    {_id: 3, name: "sai", age: 34, email: "lmop@gmail.com",  phone: 9090909091 }
 ]);
 
 3. Retrieve the data - 
@@ -26,7 +26,7 @@ db.student.find().pretty();
 
 4.Retrieve data with a Condition-
 
- db.student.find({name: {$ne: sms}});
+ db.student.find({name: {$ne: teja}});
 
 5.Update a Single row - 
 
@@ -38,13 +38,13 @@ db.student.updateOne(
 6.Update Multiple row -
 
 db.customer.updateMany(
-    {name: "xyz"},
+    {name: "ANI"},
     {$set: {age: 45, email: "ghyrt@gmail.com"}}
 );
 
 7.Delete a Single row -
 
- db.student.deleteOne({name: "sys"});
+ db.student.deleteOne({name: "teja"});
 
 8. Delete Multiple row - 
 
