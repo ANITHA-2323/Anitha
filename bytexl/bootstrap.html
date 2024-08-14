@@ -1,0 +1,985 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style> 
+     
+      #io {
+      	width: 400px;
+  height: 400px;
+  background: ghostwhite;
+  position: relative;
+  animation: mymove 5s infinite;
+  
+}
+@keyframes mymove {
+  from {top: 100px;}
+  100% {top: 100px !important;} /* ignored */
+  to {top: 0px;}
+
+
+}
+
+ .progress-bar {
+      width: 100%;
+      height: 15px;
+      border: 1px solid #565656;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgb(245, 159, 0);
+    }
+
+
+
+.card{
+ transition: width 2s, height 2s;
+}
+`
+.card:hover {
+        width: 300px;
+      height: 400px;
+      
+    }
+ 
+</style>
+</head>
+<body>
+	<div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+  <div class="container-fluid" style="background: navy;">
+    <header class="d-flex flex-wrap justify-content-center py-1 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <!-- Replace the SVG code with an actual image -->
+        <img src="https://bootstrapmade.com/assets/img/logo.png" alt="BootstrapMade" width="100" height="32">
+        <span class="fs-4"></span>&nbsp;&nbsp;&nbsp;<i class="fa fa-bookmark-o" aria-hidden="true" style="font-size: x-large;color: white;"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-clone" aria-hidden="true" style="font-size: x-large;color: white;"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-square-o-down" aria-hidden="true" style="font-size: x-large;color: white;"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-square-o-right" aria-hidden="true" style="font-size: x-large;color: white;"></i>
+
+
+
+      </a>
+      <b class="mb-3 mb-md-0 me-md-auto" style="color: white;">MOUNI</b>
+       <i class="fa fa-external-link" aria-hidden="true" style="font-size: x-large;color: white;"></i>
+
+      <ul class="nav nav-pills " style="background:skyblue;">
+        
+        
+
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-download" aria-hidden="true" style="font-size: x-large;color: white;"></i>&nbsp;&nbsp;<b>FREE DOWNLOAD</b></a></li>
+      </ul>
+    </header>
+  </div>
+
+  <div class="container-fluid  my-5 p-5 " style= "backgrond:navy;">
+
+    <div class="row">
+        <div class="col">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MOUNI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+          <div class="col">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">SERIVIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">TEAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRISING</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DROUP DOWN MENU
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+              <button type="button" class="btn btn-primary btn-lg">STARTED</button>
+
+              </div>
+          </div>
+        </div>
+      </nav>
+      </div>
+
+      <div class="container-fluid my-5 p-5">
+      <div class="row">
+        <div class="col">
+            <div class="row">
+                <h1 class=" text-white">Better Solutions For Your Business</h1>
+            </div>
+            <div class="row">
+                <p class="fs-2 text-white">We are team of talented designers making websites with Bootstrap</p>
+            </div>
+        </div>
+        <div class="col" id="io">
+            <img src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\imgd3.png"class="img-fluid animated" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+              <button type="button" class="btn btn-primary btn-lg"> watch video</button>
+
+        </div>
+        <div class="col">
+          <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i></a>
+        </div>
+      </div>
+    </div>
+  	</div>
+	
+
+
+	<div class="container-fluid p-0 my-5 text-white" style="background:lavender; height: 20%;">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div style="display: flex; justify-content: space-evenly;">
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic1 (2).png" alt="Microsoft" style="max-width: 100px; height: 50px;"></a>
+          <a href="/" class="d-flex link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic5.png" alt="NVIDIA" style="max-width: 100px; height: 50px;"></a>
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic3.png" alt="Amazon" style="max-width: 100px; height: 50px;"></a>
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic2.png" alt="Wipro" style="max-width: 100px; height: 50px;"></a>
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic4.png" alt="Adidas" style="max-width: 100px; height: 40px;"></a>
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic8.png" alt="Apple" style="max-width: 100px; height: 40px;"></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div style="display: flex; justify-content: space-evenly;">
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic7.png" alt="Intel" style="max-width: 100px; height: 50px;"></a>
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic6.png" alt="Samsung" style="max-width: 100px; height: 50px;"></a>
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic8.png" alt="Google" style="max-width: 100px; height: 50px;"></a>
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic4.png" alt="Facebook" style="max-width: 100px; height: 50px;"></a>
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic2.png" alt="Nike" style="max-width: 100px; height: 40px;"></a>
+          <a href="/" class="d-flex  link-body-emphasis text-decoration-none"><img class="d-block" src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\pic5.png" alt="Amazon" style="max-width: 100px; height: 40px;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+<div class="container-fluid bg-white text-black p-0 my-5 " >
+	<div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+      <h1 style="text-align:center ;color: blanchedalmond;"><b>ABOUT US</b></h1>
+      <h1 style="text-align:center ;"><i class="fa fa-arrows-h" aria-hidden="true" style="font-size: 100px;color: black;width: 100px;"></i>
+
+</h1>
+
+	<div class="row">
+        <div class="col" style="padding: 10px 90px;">
+  <h4 style="color: skyblue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit.Ullamco laboris nisi ut aliquip ex ea commodo</h4>
+  
+
+  </div>
+        <div class="col" style="padding: 10px 90px;">
+  <h4 style="color: skyblue;">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+  <h5><a href="#" class="nav-link rounded py-1 width-5 "  style="border-color: skyblue;border-radius: 1px;background:skyblue;width: 30%;">Read more-></a></h5>
+  </div>
+  </div>
+
+	<div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+
+<div class="container my-5" >
+
+		<div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+  <div class="row">
+    <div class="col text-white">
+      
+      <h2>Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h2>
+
+    
+  
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>  
+
+  
+      <p class="d-inline-flex gap-1">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        1 Non consectetur a erat nam at lectus urna duis?
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+      </div>
+    </div>
+    <p class="d-inline-flex gap-1">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        2 Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+      </div>
+    </div>
+  
+  
+      <p class="d-inline-flex gap-1">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        3 Dolor sit amet consectetur adipiscing elit pellentesque?
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+      </div>
+    </div>
+  </div>
+  <div class="col"style="background:navy;">
+    <img src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\why-us.png"class="img-fluid animated" alt="">
+  </div>
+  </div>
+</div>
+
+<div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+
+<div class="container p-5 my-5">
+
+	<div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+  <div class="row">
+    <div class="col">
+      <img src="C:\Users\SANJEETH\OneDrive\Desktop\mouni mern\skillsimg.png"class="img-fluid animated" alt="">
+    </div>
+<div class="col text-white">
+  <h3>Voluptatem dignissimos provident quasi corporis voluptas</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <h3>CSS</h3>
+  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 100%" style="bgcolour:pink;"></div>
+  </div>
+  <h3>HTML</h3>
+  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 80%"></div>
+  </div>
+  <h3>PHOTO SHOP</h3>
+  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 60%"></div>
+  </div>
+  <h3>JAVA SCRIPT</h3>
+  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 40%"></div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+<div class="container-fluid  text-black p-0 my-5">
+
+	<div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+        <h1 style="text-align:center;color: lightseagreen;">SERVICES</h1><hr/>
+        <p style="text-align:center;color: whitesmoke;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <div class="row" style="padding: 30px; height: 50%;">
+      <div class="col" style="height: 30%; padding: 30px;">
+        <div class="card" style="height: 50%; padding: 30px;">
+          <a href="#" class="nav-link" style="border-color: whitesmoke; border-radius: 1px; background: white; width: 100%; height: 100%;">
+            <i class="fa fa-line-chart" aria-hidden="true" style="color: darkgoldenrod; text-align: center; font-size: 50px; width: 100%; height: 100%;"></i>
+            <h3 class="Lorumipsum" style="text-align: center; color: darkgoldenrod;">Lorum ipsum</h3>
+          </a>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a longer card with supporting text.</p>
+        </div>
+      </div>
+      <div class="col" style="height: 30%; padding: 30px;">
+        <div class="card" style="height: 100%; padding: 30px;">
+          <a href="#" class="nav-link" style="border-color: whitesmoke; border-radius: 1px; background: white; width: 100%; height: 100%;">
+            <i class="fa fa-xing-square" aria-hidden="true" style="color: darkgoldenrod; text-align: center; font-size: 50px; width: 100%; height: 100%;"></i>
+            <h3 class="Lorumipsum" style="text-align: center; color: darkgoldenrod;">Sed ut perspici</h3>
+          </a>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a longer card with supporting text.</p>
+        </div>
+      </div>
+      <div class="col" style="height: 30%; padding: 30px;">
+        <div class="card" style="height: 100%; padding: 30px;">
+          <a href="#" class="nav-link" style="border-color: whitesmoke; border-radius: 1px; background: white; width: 100%; height: 100%;">
+            <i class="fa fa-calendar-o" aria-hidden="true" style="color: darkgoldenrod; text-align: center; font-size: 50px; width: 100%; height: 100%;"></i>
+            <h3 class="Lorumipsum" style="text-align: center; color: darkgoldenrod;">Magni dolorus</h3>
+          </a>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a longer card with supporting text.</p>
+        </div>
+      </div>
+      <div class="col" style="height: 30%; padding: 30px;">
+        <div class="card" style="height: 100%; padding: 30px;">
+          <a href="#" class="nav-link" style="border-color: whitesmoke; border-radius: 1px; background: white; width: 100%; height: 100%;">
+            <i class="fa fa-signal" aria-hidden="true" style="color: darkgoldenrod; text-align: center; font-size: 50px; width: 100%; height: 50%;"></i>
+            <h3 class="Lorumipsum" style="text-align: center; color: darkgoldenrod;">Nemo enim</h3>
+          </a>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a longer card with supporting text.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid  text-black p-0 my-5" style="background: skyblue;">
+
+  	
+
+<div class="row" style="padding:30px 90px 0px 250px; width: 100%;">
+  <div class="col" style="padding:0px 0px 0px 10px;width: 100%;">
+    <h1 class="card-title" style="width: 70%; color: darkolivegreen;"><b>Call To Action</b></h1>
+    <p class="card-text" style="color: indianred; text-size-adjust:15%;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+ <div class="col" style="padding:90px 0px 0px 190px ;width: 20%;">
+    <a href="#" class="btn rounded-pill" style="background:navy;width: 50%;color: skyblue;">Call To Action</a></div>
+</div>
+</div>
+
+<div class="parallax" style=" 
+  background-image: url('https://www.vecteezy.com/free-photos/indian-flag-abstract');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+  <section id="portfolio" class="portfolio section ">
+
+  	<div class="parallax" style=" 
+  background-image: url('https://www.vecteezy.com/free-photos/indian-flag-abstract');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h1 style="text-align:center;color: springgreen;">Portfolio</h1>
+    <h4 style="text-align:center;color: white;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</h4>
+  </div>
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+       <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">App</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Card</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Web</a>
+        </li>
+      </ul>
+    </div>
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="App 1">
+          <div class="portfolio-info text-info">
+            <h4>App 1</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="Product 1">
+          <div class="portfolio-info text-info">
+            <h4>Product 1</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="Branding 1">
+          <div class="portfolio-info text-info">
+            <h4>Branding 1</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="App 2">
+          <div class="portfolio-info text-info">
+            <h4>App 2</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="Product 2">
+          <div class="portfolio-info text-info">
+            <h4>Product 2</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="Branding 2">
+          <div class="portfolio-info text-info">
+            <h4>Branding 2</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="App 3">
+          <div class="portfolio-info text-info">
+            <h4>App 3</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="Product 3">
+          <div class="portfolio-info text-info">
+            <h4>Product 3</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="Branding 3">
+          <div class="portfolio-info text-info">
+            <h4>Branding 3</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 3" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  <div class="container text-center text-info">
+<h1>TEAM</h1>
+  <div class="row">
+    <div class="col">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://westernfinance.org/wp-content/uploads/speaker-3-v2.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Walter White</h5>
+          <p class="card-text">Chief Executive Officer
+            Explicabo voluptatem mollitia et repellat qui dolorum quasi
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://experianta.com/wp-content/uploads/avatars/23/6094430656f31-bpfull.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Sarah Jhonson
+          </h5>
+          <p class="card-text">Product Manager
+            Aut maiores voluptates amet et quis praesentium qui senda para</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">William Anderson</h5>
+              <p class="card-text">CTO
+                Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://salondesmaires-herault.fr/wp-content/uploads/2014/10/speaker-2-v2.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Amanda Jepson</h5>
+              <p class="card-text">Accountant
+                Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid text-black p-0 my-5">
+
+	<div class="parallax" style=" 
+  background-image: url('https://www.vecteezy.com/free-photos/indian-flag-abstract');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+        <h1 style="text-align:center;color: hotpink;">PRICING</h1><hr/>
+        <p style="text-align:center;color: greenyellow;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <div class="row" style="padding: 30px;  height: 100%;">
+      <div class="col" style="height: 30%; padding: 30px;">
+        <div class="card" style="height: 100%; padding: 30px;">
+          <h4 class="Lorum ipsum" style="text-align: center; color: skyblue;">Free Plan</h4>
+            <h1>$0 / month</h1>
+          <h3 style="color:white;">gc bnmhgv</h3>
+          <i class="fa fa-check" aria-hidden="true">Quam adipiscing vitae proin</i>
+
+        <i class="fa fa-check" aria-hidden="true">Nec feugiat nisl pretium</i>
+         <i class="fa fa-check" aria-hidden="true">Nulla at volutpat diam uteera</i>
+        <i class="fa fa-times" aria-hidden="true">Pharetra massa massa ultricies</i>
+        <i class="fa fa-times" aria-hidden="true">Massa ultricies mi quis hendrerit</i>
+        <h3 style="color:white;">gc bnmhgv</h3>
+        <a href="#" class="btn rounded-pill" style="background:skyblue;width: 100%;color: navy;">Call To Action</a></div>
+        </div>
+    <div class="col" style="height: 30%; padding: 30px;">
+        <div class="card" style="height: 100%; padding: 30px;">
+          <h4 class="Lorum ipsum" style="text-align: center; color: skyblue;">Bussiness Plan</h4>
+            <h1>$29 / month</h1>
+          <h3 style="color:white;">gc bnmhgv</h3>
+          <i class="fa fa-check" aria-hidden="true">Quam adipiscing vitae proin</i>
+
+        <i class="fa fa-check" aria-hidden="true">Nec feugiat nisl pretium</i>
+         <i class="fa fa-check" aria-hidden="true">Nulla at volutpat diam uteera</i>
+        <i class="fa fa-check" aria-hidden="true">Pharetra massa massa ultricies</i>
+        <i class="fa fa-check" aria-hidden="true">Massa ultricies mi quis hendrerit</i>
+        <h3 style="color:white;">gc bnmhgv</h3>
+        <a href="#" class="btn rounded-pill" style="background:skyblue;width: 100%;color: navy;">Call To Action</a></div>
+        </div>
+      <div class="col" style="height: 30%; padding: 30px;">
+        <div class="card" style="height: 100%; padding: 30px;">
+          <h4 class="Lorum ipsum" style="text-align: center; color: skyblue;">Developer Plan</h4>
+            <h1>$49 / month</h1>
+          <h3 style="color:white;">gc bnmhgv</h3>
+          <i class="fa fa-check" aria-hidden="true">Quam adipiscing vitae proin</i>
+
+        <i class="fa fa-check" aria-hidden="true">Nec feugiat nisl pretium</i>
+         <i class="fa fa-check" aria-hidden="true">Nulla at volutpat diam uteera</i>
+       <i class="fa fa-check" aria-hidden="true">Pharetra massa massa ultricies</i>
+        <i class="fa fa-check" aria-hidden="true">Massa ultricies mi quis hendrerit</i>
+        <h3 style="color:white;">gc bnmhgv</h3>
+        <a href="#" class="btn rounded-pill" style="background:skyblue;width: 100%;color: navy;">Call To Action</a></div>
+        </div>
+      
+     </div>
+   </div>
+</div>
+<div class="parallax" style=" 
+  background-image: url('https://www.vecteezy.com/free-photos/indian-flag-abstract');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+<div class="container-fluid bg-white text-black p-0 my-5" style="background:skyblue;">
+
+<div class="row" style="background:;">
+<h1 style="text-align:center;color: black;"><b>TESTIMONIALS</b></h1><hr/>
+<p style="text-align:center;color: navy;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+</div>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+      <img src="https://westernfinance.org/wp-content/uploads/speaker-3-v2.jpg" class="d-block rounded-circle" alt="John Wick" style="max-width: 100px; height: 100px;">
+      <h2 style="text-align: center; color: navy; margin-top: 10px;">John Wick</h2>
+      <h5 style="text-align: center; color: gray; margin-top: 5px;">CEO</h5>
+      <p style="text-align: center; margin-top: 5px;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+      <img src="https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg" class="d-block rounded-circle" alt="Jhonny" style="max-width: 100px; height: 100px;">
+      <h2 style="text-align: center; color: navy; margin-top: 10px;"></h2>
+      <h5 style="text-align: center; color: gray; margin-top: 5px;"></h5>
+      <p style="text-align: center; margin-top: 5px;"></p>
+    </div>
+    <div class="carousel-item" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+      <img src="https://experianta.com/wp-content/uploads/avatars/23/6094430656f31-bpfull.jpg" class="d-block rounded-circle" alt="Henry Cavil" style="max-width: 100px; height: 100px;">
+      <h2 style="text-align: center; color: navy; margin-top: 10px;"></h2>
+      <h5 style="text-align: center; color: gray; margin-top: 5px;"></h5>
+      <p style="text-align: center; margin-top: 5px;"></p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+<div class="container-fluid p-0 my-5 " style="background:white;">
+        <h1 style="text-align: center; color: olive;"><b>FREQUENTLY ASKED QUESTIONS</b></h1><hr/>
+        <p style="text-align: center; color: darkmagenta; ">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp&nbsp&nbsp<p style="color: navy;">Non consectetur a erat nam at lectus urna duis?</p>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+<i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp&nbsp&nbsp  <p style="color: navy;">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</p>    </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+<i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp&nbsp&nbsp  <p style="color: navy;">Dolor sit amet consectetur adipiscing elit pellentesque?</p>      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+</div>
+
+
+<h1 style="text-align:center;color: lightgoldenrodyellow;">CONTACT</h1>
+  <div class="row">
+    <div class="col">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193559.13256472183!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1721414624168!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+<div class="col" style="background:lightpink;">
+        <label for="exampleFormControlInput1" class="form-label"><h3>NAME:</h3></label>
+  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
+         <label for="exampleFormControlInput1" class="form-label"><h3>EMAIL:</h3></label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email address">
+  <label for="exampleFormControlInput1" class="form-label"><h3>TOPIC:</h3></label>
+  <input type="Subject" class="form-control" id="exampleFormControlInput1" placeholder="topic">
+  <label for="exampleFormControlTextarea1" class="form-label"><h3>MESSAGE:</h3></label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="if you have any queries"></textarea>
+  <a href="#" class="btn rounded-pill" style="background:skyblue;width: 100%;color: navy;">Send Message</a>
+</div>
+</div>
+</div>
+
+<div class="container-fluid p-5 my-5" style="background: palegreen;"> 
+
+
+<div class="card1 text-center">
+  <div class="card-header">
+  
+  </div>
+  <div class="card-body">
+    <h1 class="card-title" style="color: navy;">Our Newsletter</h1>
+    <p class="card-text">Subscribe to our newsletter and receive the latest news about our products and services!
+
+</p>
+   <form class="d-flex" role="search" style="backgroud-color:pink;color:navy;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" style="backgroud-color:pink;color:navy;">Subscribe</button>
+      </form>
+  </div>
+  
+</div>
+</div>
+</div>
+<div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+  <div class="container-fluid p-5 my-5 bg-white text-white"style="background:lavender;">
+    <div class="parallax" style=" 
+  background-image: url('https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user');
+
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+    
+    <footer class="text-center text-lg-start text-muted" style="background:lightblue;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h1 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>ANI
+          </h1>
+          <p>
+           A-143 beach road
+          </p>
+          <p>
+         New York, NY 535022
+          </p>
+          <p>
+         <h4>Phone:</h4> +1 4563 87659 66
+          </p>
+           <p>
+         <h4>Email:</h4>info@example.com
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Follow Us</h6>
+          <p style="color:grey;">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <p class="card-text"><small class="text-body-secondary"><i class="fa fa-linkedin-square rounded-circle" aria-hidden="true" style="font-size:25px"></i>&nbsp&nbsp<i class="fa fa-twitter rounded-circle" aria-hidden="true" style="font-size:25px"></i>&nbsp&nbsp<i class="fa fa-facebook-official rounded-circle" aria-hidden="true" style="font-size:25px"></i>&nbsp&nbsp
+<i class="fa fa-instagram rounded-circle" aria-hidden="true" style="font-size:25px"></i>&nbsp&nbsp</small></p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <p style="text-align:center;color: grey;">Designed by ANITHA</p>
+
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</div>
+
+
+</body>
+</html>
