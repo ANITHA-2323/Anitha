@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+} 
+
+/* Navbar */
+nav {
+    background-color: navy;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+div.scroll-container {
+  
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}  
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: lightcoral;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 30px;
+
+}
+
+/* About Us */
+#about {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Contact Form and Google Map */
+#contact {
+    display: flex;
+    padding: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 8px solid lightblue;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.google-map {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav> 
+        <div class="col">
+            <div class="row">
+            <img src="https://www.bytexl.com/assets/images/logo.png" alt="" >
+        </div> 
+        <div class="row">          
+            <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#cards">CARDS</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+            <li><a href="#footer">FOOTER</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+</div>
+</div>
+
+<div class="container" style="background: paleturquoise;">
+    <h1 style="text-align: center; color: olive;">ABOUT MY WEBSITE</h1>
+    <p> A website (also written as a web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server. Websites are typically dedicated to a particular topic or purpose, such as news, education, commerce, entertainment, or social media. Hyperlinking between web pages guides the navigation of the site, which often starts with a home page. The most-visited sites are Google, YouTube, and Facebook.
+
+All publicly-accessible websites collectively constitute the World Wide Web. There are also private websites that can only be accessed on a private network, such as a company's internal website for its employees. Users can access websites on a range of devices, including desktops, laptops, tablets, and smartphones. The app used on these devices is called a web browser.
+
+</p>
+</div>
+
+<div class="container p-5 my-5" style="background:darkolivegreen;">
+    <h1 style="text-align:center;color: orange;">TESTMONIALS OF WEBSITE</h1>
+<div class="scroll-container"style="background:darkolivegreen;">
+  <video src="https://www.shutterstock.com/shutterstock/videos/3476860775/preview/stock-footage-flower-opening-close-up-soft-petals-of-beautiful-purple-tulip-time-lapse-nature-background-tulip.webm" style="color:white;padding: 30px 20px;width: 700px;" controls></video>
+  <video src="https://www.shutterstock.com/shutterstock/videos/1105609073/preview/stock-footage-aerial-view-of-sunset-with-renewable-energy.webm" style="color:white;padding: 30px 20px;width: 700px;" controls ></video>
+  <video src="https://www.shutterstock.com/shutterstock/videos/1110614043/preview/stock-footage-abstract-background-animation-seamlessly-loopable-beautiful-particles-floating-mid-air-shallow.webm" style="color:white;padding: 30px 20px;width: 700px;" controls></video>
+  <video src="https://www.shutterstock.com/shutterstock/videos/1111976279/preview/stock-footage-super-slow-motion-macro-of-rain-water-drops-falling-and-splashing-on-umbrella-while-raining-outside.webm" style="color:white;padding: 30px 20px;width: 700px;" controls></video>
+</div>
+</div>
+   
+       <section class="cards">
+        <div class="card">
+            <h1>William Anderson</h1>
+            <img src="https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg" class="img-fluid rounded-start" alt="..." width= 400 height= 300 />
+            <h3>CTO Quisquam facilis cum velit laborum corrupti fuga rerum quia</h3>
+        </div>
+        <div class="card">
+            <h1>Amanda Jepson</h1>
+            <img src="https://salondesmaires-herault.fr/wp-content/uploads/2014/10/speaker-2-v2.jpg" class="img-fluid rounded-start" alt="..." width= 400 height= 300 />
+            <h3>Product Manager Aut maiores voluptates amet et quis praesentium qui senda para</h3>
+        </div>
+        <div class="card">
+            <h1>Sarah Jhonson</h1>
+            <img src="https://experianta.com/wp-content/uploads/avatars/23/6094430656f31-bpfull.jpg" class="img-fluid rounded-start" alt="..." width= 400 height= 300 />
+            <h3>Accountant Dolorum tempora officiis odit laborum officiis et et accusamus</h3>
+        </div>
+    </section>
+
+<div class="container-fliud p-5 my-5" style="background:orange;">
+    <section id="about">
+        <h1 style="color:darkolivegreen;">About Us</h1>
+        <p>TVenturing out to start your own business is an exciting but overwhelming experience. According to 2017 data from the Bureau of Labor Statistics (the most recent data available), 70% of small businesses fail within the first 10 years. That is a lot of pressure. When you are just getting started, taking the first steps can seem daunting. In those early stressful moments, remember that every entrepreneur must start somewhere.
+It can be comforting to know that many of the most famous entrepreneurs came from modest beginnings. Regardless of where you are in your entrepreneurial journey, it may help to explore the stories of the most successful entrepreneurs. Doing so may help you learn from their mistakes and savvy moves. Below, we discuss what makes an entrepreneur successful, 30 examples of famous entrepreneurs and who is the most famous entrepreneur.</p>
+    </section>
+</div>
+
+    <section id="contact">
+        <div class="contact-form" style="background: palegreen;">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+  
+    <footer id="footer">
+        <p>&copy; 2024 My Website: designed by MOUNIKA.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

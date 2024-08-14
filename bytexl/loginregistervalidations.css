@@ -1,0 +1,81 @@
+
+    body 
+    {
+        background-color: lavender;
+        font-family: robot;
+    }
+    .container 
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .login, .reg 
+    {
+        background-color: powderblue;
+        padding: 20px;
+        margin: 30px;
+    }
+    form 
+    {
+        width: 300px;
+        height: auto;    
+        padding: 40px;
+        background-color: skyblue;
+    }
+    form h1 
+    {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+    form label 
+    {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    form input, form select 
+    {
+        width: 100%;
+        height: 30px;
+        margin-top: 5px;           
+        margin-bottom: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    input[type="button"] 
+    {
+        width: 100%;
+        height: 35px;
+        background-color: blue;
+        border: none;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    input[type="radio"] 
+    {
+        width: auto;
+    }
+    .radio-button 
+    {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    input[type="checkbox"] 
+    {
+        width: auto;
+    }
+    .check-box 
+    {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>L&R jsvalidation form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+	<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+	<link rel='stylesheet' href='L&Rjsvalidation.css' type='text/css' />
+	<script src="L&Rjsvalidation.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div class="login">
+            <form class="login-form" name='registration' id="mouni" onSubmit="return loginformValidation();">
+                <h1>LOGIN</h1>
+                <label for="login-email">Email</label>
+                <input type="email" name="login-email" id="login-email" required>
+                
+                <label for="login-password">Password</label>
+                <input type="password" name="login-password" id="login-password" required>
+
+                <label for="login-captcha">Captcha</label>
+                <input type="text" name="login-captcha" id="login-captcha" required>
+                <input type="submit" name="submit" value="Submit" />
+                
+            </form>
+        </div>
+        <div class="reg" name='registration' id="mouni" onSubmit="return regformValidation();">
+            <form class="reg-form">
+                <h1>REGISTER</h1>
+                <label for="reg-name">Name</label>
+                <input type="text" name="reg-name" id="reg-name" required>
+
+                <label for="reg-password">Password</label>
+                <input type="password" name="reg-password" id="reg-password" required>
+
+                <label for="reg-confirm-password">Confirm Password</label>
+                <input type="password" name="reg-confirm-password" id="reg-confirm-password" required>
+                <label for="address">Address:</label>
+				<input type="text" name="address" size="30" />
+
+                <label for="reg-country">Choose Country</label>
+                <select name="reg-country" id="reg-country" required>
+                    <option value="">Choose Country</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select>
+                <label for="zip">ZIP Code:</label>
+				<input type="text" name="zip" />
+				<label for="email">Email:</label>
+				<input type="email" name="email" size="30" />
+                <label>Do you have a passport?</label>
+                <div class="radio-button">
+                    <input type="radio" name="passport" id="yes" value="yes">YES
+                    <input type="radio" name="passport" id="no" value="no">NO
+                </div>
+                <div class="gender">
+                	<label id="gender">Sex:</label>
+					<input type="radio" name="mgsex" value="Male" /><span>Male</span>
+					<input type="radio" name="mgsex" value="Female" checked/><span>Female</span>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="declaration" id="declaration"> The give information is correct.
+                </div>
+                	<input type="submit" name="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+<p style="text-align:center"> &copy; by ANI....</p>
+
+</body>
+</html>
